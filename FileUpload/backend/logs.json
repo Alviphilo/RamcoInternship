@@ -1,0 +1,202 @@
+[
+    {
+        "timestamp": "2025-09-17 10:40:35",
+        "employee_id": "1026",
+        "server": "RM-DEV",
+        "filename": "serverdb.sql",
+        "status": "error",
+        "message": "('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')"
+    },
+    {
+        "timestamp": "2025-09-17 10:50:16",
+        "employee_id": "1026",
+        "server": "RM-DEV",
+        "filename": "serverDBDash.sql",
+        "status": "error",
+        "message": "('28000', \"[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'root'. (18456) (SQLDriverConnect)\")"
+    },
+    {
+        "timestamp": "2025-09-17 10:52:25",
+        "employee_id": "1026",
+        "server": "RM-DEV",
+        "filename": "query.sql",
+        "status": "error",
+        "message": "('08004', \"[08004] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Database 'sample' does not exist. Make sure that the name is entered correctly. (911) (SQLExecDirectW)\")"
+    },
+    {
+        "timestamp": "2025-09-17 10:52:46",
+        "employee_id": "1026",
+        "server": "RM-DEV",
+        "filename": "serverdb.sql",
+        "status": "error",
+        "message": "('08004', \"[08004] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Database 'serverDB' does not exist. Make sure that the name is entered correctly. (911) (SQLExecDirectW)\")"
+    },
+    {
+        "timestamp": "2025-09-17 10:59:41",
+        "employee_id": "1026",
+        "server": "RM-DEV",
+        "filename": "query.sql",
+        "status": "error",
+        "message": "('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column, parameter, or variable #2: Cannot specify a column width on data type int. (2716) (SQLExecDirectW)')"
+    },
+    {
+        "timestamp": "2025-09-17 11:01:05",
+        "employee_id": "1026",
+        "server": "RM-DEV",
+        "filename": "query.sql",
+        "status": "error",
+        "message": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Database 'sample' already exists. Choose a different database name. (1801) (SQLExecDirectW)\")"
+    },
+    {
+        "timestamp": "2025-09-17 11:10:01",
+        "employee_id": "1026",
+        "server": "RM-DEV",
+        "filename": "query.sql",
+        "status": "error",
+        "message": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Database 'sample' already exists. Choose a different database name. (1801) (SQLExecDirectW)\")"
+    },
+    {
+        "timestamp": "2025-09-17 11:11:09",
+        "employee_id": "1026",
+        "server": "RM-DEV",
+        "filename": "query.sql",
+        "status": "error",
+        "message": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Unclosed quotation mark after the character string 'sample'. (105) (SQLExecDirectW)\")"
+    },
+    {
+        "timestamp": "2025-09-17 11:12:00",
+        "employee_id": "1034",
+        "server": "RM-DEV",
+        "filename": "query.sql",
+        "status": "error",
+        "message": "('42S01', \"[42S01] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There is already an object named 'sample1' in the database. (2714) (SQLExecDirectW)\")"
+    },
+    {
+        "timestamp": "2025-09-17 11:12:41",
+        "employee_id": "123",
+        "server": "RM-DEV",
+        "filename": "query.sql",
+        "status": "error",
+        "message": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'END'. (156) (SQLExecDirectW)\")"
+    },
+    {
+        "timestamp": "2025-09-17 11:13:49",
+        "employee_id": "243",
+        "server": "RM-DEV",
+        "filename": "query.sql",
+        "status": "error",
+        "message": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'END'. (156) (SQLExecDirectW)\")"
+    },
+    {
+        "timestamp": "2025-09-17 11:15:14",
+        "employee_id": "qdss",
+        "server": "RM-DEV",
+        "filename": "query.sql",
+        "status": "error",
+        "message": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'END'. (156) (SQLExecDirectW)\")"
+    },
+    {
+        "timestamp": "2025-09-17 11:16:29",
+        "employee_id": "asd",
+        "server": "RM-DEV",
+        "filename": "query.sql",
+        "status": "success",
+        "message": "SQL deployed to RM-DEV"
+    },
+    {
+        "timestamp": "2025-09-17 11:20:50",
+        "employee_id": "1026",
+        "server": "RM-DEV",
+        "filename": "headache.sql",
+        "status": "error",
+        "message": "('08004', \"[08004] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Database 'SampleDB' does not exist. Make sure that the name is entered correctly. (911) (SQLExecDirectW)\")"
+    },
+    {
+        "timestamp": "2025-09-17 11:22:14",
+        "employee_id": "eart",
+        "server": "RM-DEV",
+        "filename": "headache.sql",
+        "status": "error",
+        "message": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'AUTO_INCREMENT'. (102) (SQLExecDirectW)\")"
+    },
+    {
+        "timestamp": "2025-09-17 11:23:35",
+        "employee_id": "et",
+        "server": "RM-DEV",
+        "filename": "headache.sql",
+        "status": "error",
+        "message": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'END'. (156) (SQLExecDirectW)\")"
+    },
+    {
+        "timestamp": "2025-09-17 12:08:13",
+        "employee_id": "1029",
+        "server": "RM-DEV",
+        "filename": "headache.sql",
+        "status": "error",
+        "message": "('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')"
+    },
+    {
+        "timestamp": "2025-09-17 12:16:04",
+        "employee_id": "sas",
+        "server": "RM-DEV",
+        "filename": "headache.sql",
+        "status": "success",
+        "message": "SQL deployed to RM-DEV"
+    },
+    {
+        "timestamp": "2025-09-17 12:16:39",
+        "employee_id": "sas",
+        "server": "RM-QA",
+        "filename": "headache.sql",
+        "status": "error",
+        "message": "('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')"
+    },
+    {
+        "timestamp": "2025-09-19 10:12:15",
+        "employee_id": "1029",
+        "server": "RM-DEV",
+        "filename": "headache.sql",
+        "status": "error",
+        "message": "('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')"
+    },
+    {
+        "timestamp": "2025-09-19 10:15:10",
+        "employee_id": "1029",
+        "server": "RM-DEV",
+        "filename": "headache.sql",
+        "status": "success",
+        "message": "SQL deployed to RM-DEV"
+    },
+    {
+        "timestamp": "2025-09-19 10:30:29",
+        "employee_id": "1026",
+        "server": "RM-DEV",
+        "filename": "headache.sql",
+        "status": "success",
+        "message": "SQL deployed to RM-DEV"
+    },
+    {
+        "timestamp": "2025-09-19 10:36:10",
+        "employee_id": "1028",
+        "server": "RM-DEV",
+        "filename": "mysqlserver.sql",
+        "status": "error",
+        "message": "('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server]Syntax error, permission violation, or other nonspecific error (0) (SQLExecDirectW)')"
+    },
+    {
+        "timestamp": "2025-09-19 10:38:18",
+        "employee_id": "1029",
+        "server": "RM-DEV",
+        "filename": "mysqlserver.sql",
+        "status": "error",
+        "message": "('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server]Syntax error, permission violation, or other nonspecific error (0) (SQLExecDirectW)')"
+    },
+    {
+        "timestamp": "2025-09-19 10:48:32",
+        "employee_id": "1026",
+        "server": "RM-DEV",
+        "filename": "mysqlserver.sql",
+        "status": "success",
+        "message": "SQL deployed to RM-DEV"
+    }
+]

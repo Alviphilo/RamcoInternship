@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SQL Deployment Tool</title>
+
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Internal SQL Deployment Tool</h2>
+    <form id="deployForm" enctype="multipart/form-data">
+      <label>Employee ID</label>
+      <input type="text" name="employeeId" required>
+
+      <label>SQL File</label>
+      <input type="file" name="sqlFile" accept=".sql" required>
+
+      <label>Select Server</label>
+      <select name="serverKey" required>
+        <option value="">-- Select Server --</option>
+        <option value="RM-DEV">RM-DEV</option>
+        <option value="RM-QA">RM-QA</option>
+      </select>
+
+      <button type="submit">Deploy</button>
+    </form>
+    <div id="response"></div>
+  </div>
+
+  
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

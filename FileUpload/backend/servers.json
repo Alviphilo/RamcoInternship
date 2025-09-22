@@ -1,0 +1,23 @@
+{
+  "RM-DEV": {
+    "type": "mssql",
+    "host": "localhost,1433",
+    "username": "sa",
+    "password": "Alvina@2904",
+    "database": "SampleDB"
+  },
+  "QA-DB": {
+    "type": "mysql",
+    "host": "localhost",
+    "username": "root",
+    "password": "rootpass",
+    "database": "SampleDB"
+  },
+  "PG-TEST": {
+    "type": "postgres",
+    "host": "localhost",
+    "username": "postgres",
+    "password": "pgpass",
+    "database": "sampledb"
+  }
+}
