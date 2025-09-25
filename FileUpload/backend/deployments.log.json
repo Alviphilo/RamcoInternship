@@ -112,5 +112,97 @@
       }
     ],
     "db_type": "mssql"
+  },
+  {
+    "timestamp": "2025-09-25T03:52:11Z",
+    "employee_id": "1028",
+    "server_key": "RM-DEV",
+    "filename": "mysqlserver.sql",
+    "status": "error",
+    "message": "Unexpected error",
+    "error": "('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')",
+    "batch_results": [],
+    "db_type": "mssql"
+  },
+  {
+    "timestamp": "2025-09-25T03:53:17Z",
+    "employee_id": "1028",
+    "server_key": "RM-DEV",
+    "filename": "mysqlserver.sql",
+    "status": "error",
+    "message": "Unexpected error",
+    "error": "('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')",
+    "batch_results": [],
+    "db_type": "mssql"
+  },
+  {
+    "timestamp": "2025-09-25T03:54:33Z",
+    "employee_id": "1092",
+    "server_key": "RM-DEV",
+    "filename": "mysqlserver.sql",
+    "status": "warning",
+    "message": "Script executed with warnings",
+    "error": null,
+    "batch_results": [
+      {
+        "batch": 1,
+        "status": "success"
+      },
+      {
+        "batch": 2,
+        "status": "success"
+      },
+      {
+        "batch": 3,
+        "status": "success"
+      },
+      {
+        "batch": 4,
+        "status": "warning",
+        "error": "Duplicate key skipped"
+      },
+      {
+        "batch": 5,
+        "status": "success"
+      }
+    ],
+    "db_type": "mssql"
+  },
+  {
+    "timestamp": "2025-09-25T04:12:52Z",
+    "employee_id": "1028",
+    "server_key": "RM-DEV",
+    "filename": "mysqlserver.sql",
+    "status": "warning",
+    "message": "Deployment completed with warnings - 1 batch(es) had warnings, 4 succeeded",
+    "error": null,
+    "batch_results": [
+      {
+        "batch": 1,
+        "status": "success",
+        "rows_affected": -1
+      },
+      {
+        "batch": 2,
+        "status": "success",
+        "rows_affected": -1
+      },
+      {
+        "batch": 3,
+        "status": "success",
+        "rows_affected": -1
+      },
+      {
+        "batch": 4,
+        "status": "warning",
+        "error": "Duplicate key constraint - record skipped"
+      },
+      {
+        "batch": 5,
+        "status": "success",
+        "rows_affected": -1
+      }
+    ],
+    "db_type": "mssql"
   }
 ]

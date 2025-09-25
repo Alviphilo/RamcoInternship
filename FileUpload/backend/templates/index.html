@@ -2,34 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SQL Deployment Tool</title>
-
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal SQL Deployment Tool</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    /* Additional styles that extend your existing CSS */
+    .validation-error {
+      color: #a33a3a;
+      font-size: 0.85rem;
+      margin-top: 4px;
+      font-weight: normal;
+      font-style: italic;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .file-info {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 4px;
+      font-weight: normal;
+      font-style: italic;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    
+    button:disabled {
+      background: #ccc !important;
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+    
+    /* Extend your existing #response styles */
+    #response.warning {
+      background: #fff3cd;
+      color: #856404;
+      border: 1px solid #ffeaa7;
+    }
+    
+    #response.loading {
+      background: #d1ecf1;
+      color: #0c5460;
+      border: 1px solid #bee5eb;
+    }
+    
+    .batch-results {
+      margin-top: 15px;
+      font-size: 0.9rem;
+      text-align: left;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .batch-item {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .batch-item:last-child {
+      border-bottom: none;
+    }
+    
+    .batch-status {
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 0.8rem;
+      display: inline-block;
+      min-width: 60px;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .batch-success { 
+      background: #e8f7e8; 
+      color: #2d7a2d; 
+    }
+    
+    .batch-warning { 
+      background: #fff3cd; 
+      color: #856404; 
+    }
+    
+    .batch-error { 
+      background: #ffe8e8; 
+      color: #a33a3a; 
+    }
+    
+    .error-details {
+      margin-top: 10px;
+      font-size: 0.85rem;
+      color: #666;
+      font-style: italic;
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h2>Internal SQL Deployment Tool</h2>
     <form id="deployForm" enctype="multipart/form-data">
-      <label>Employee ID</label>
-      <input type="text" name="employeeId" required>
+      <div class="form-group">
+        <label for="employeeId">Employee ID</label>
+        <input type="text" name="employeeId" id="employeeId" required maxlength="20">
+        <div id="employeeId-error" class="validation-error"></div>
+      </div>
 
-      <label>SQL File</label>
-      <input type="file" name="sqlFile" accept=".sql" required>
+      <div class="form-group">
+        <label for="sqlFile">SQL Script File</label>
+        <input type="file" name="sqlFile" id="sqlFile" accept=".sql" required>
+        <div class="file-info">Only .sql files are accepted (max 5MB)</div>
+        <div id="sqlFile-error" class="validation-error"></div>
+      </div>
 
-      <label>Select Server</label>
-      <select name="serverKey" required>
-        <option value="">-- Select Server --</option>
-        <option value="RM-DEV">RM-DEV</option>
-        <option value="RM-QA">RM-QA</option>
-      </select>
+      <div class="form-group">
+        <label for="serverKey">Select Server</label>
+        <select name="serverKey" id="serverKey" required>
+          <option value="">-- Select Server --</option>
+          {% for server in servers %}
+          <option value="{{ server }}">{{ server }}</option>
+          {% endfor %}
+        </select>
+        <div id="serverKey-error" class="validation-error"></div>
+      </div>
 
-      <button type="submit">Deploy</button>
+      <button type="submit" id="deployBtn">
+        <span id="btnText">Deploy</span>
+      </button>
     </form>
+    
     <div id="response"></div>
   </div>
 
-  
   <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
